@@ -1,0 +1,439 @@
+/* CONFIGURACIÓN GENERAL */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #eef2f7;
+   color: #222222;
+   line-height: 1.7;
+}
+
+/* ENCABEZADO PRINCIPAL */
+header {
+   background: linear-gradient(135deg, #06152b, #0d3563, #1683ff);
+   color: white;
+   text-align: center;
+   padding: 70px 20px;
+   border-bottom: 6px solid #1683ff;
+}
+header h1 {
+   font-size: 64px;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.35);
+}
+header p {
+   font-size: 22px;
+   color: #dcecff;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav {
+   background-color: #ffffff;
+   padding: 18px 20px;
+   text-align: center;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+nav a {
+   display: inline-block;
+   color: #071b35;
+   text-decoration: none;
+   font-size: 17px;
+   font-weight: bold;
+   margin: 0 12px;
+   padding: 8px 12px;
+   border-radius: 6px;
+   transition: all 0.3s ease;
+}
+nav a:hover {
+   background-color: #1683ff;
+   color: white;
+   transform: translateY(-2px);
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+   width: 90%;
+   max-width: 1200px;
+   margin: 50px auto;
+}
+
+/* CAJAS DE CONTENIDO */
+.seccion,
+.presentacion,
+.informacion {
+   background-color: white;
+   margin-bottom: 35px;
+   padding: 45px;
+   border-radius: 18px;
+   border: 1px solid #dce3ec;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.seccion:hover,
+.presentacion:hover,
+.informacion:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* TÍTULOS DE LAS SECCIÓN */
+.seccion h2,
+.informacion h2,
+.presentacion h2 {
+   color: #071b35;
+   font-size: 34px;
+   margin-bottom: 25px;
+   border-left: 7px solid #1683ff;
+   padding-left: 15px;
+}
+
+/* PRESENTACIÓN */
+.presentacion {
+   text-align: center;
+   padding: 60px 50px;
+}
+.presentacion h2 {
+   border-left: none;
+   padding-left: 0;
+   font-size: 42px;
+}
+.presentacion p {
+   max-width: 850px;
+   margin: 20px auto;
+   font-size: 18px;
+}
+
+/* IMAGEN PRINCIPAL */
+.foto-principal {
+   width: 350px;
+   height: 350px;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 8px solid #1683ff;
+   margin: 25px auto;
+   display: block;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+/* SECCIÓN IMÁGENES */
+.foto-seccion {
+   display: block;
+   width: 100%;
+   max-width: 650px;
+   height: 400px;
+   object-fit: cover;
+   margin: 30px auto;
+   border-radius: 15px;
+   border: 4px solid #e2e8f0;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* BOTÓN */
+.boton {
+   display: inline-block;
+   background-color: #1683ff;
+   color: white;
+   text-decoration: none;
+   padding: 14px 30px;
+   border-radius: 8px;
+   font-size: 17px;
+   font-weight: bold;
+   margin-top: 15px;
+   transition: all 0.3s ease;
+   box-shadow: 0 5px 15px rgba(22, 131, 255, 0.30);
+}
+.boton:hover {
+   background-color: #071b35;
+   transform: translateY(-3px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+/* LISTAS */
+ul {
+   max-width: 700px;
+   margin: 25px auto;
+   padding: 25px 45px;
+   background-color: #f5f8fc;
+   border-left: 5px solid #1683ff;
+   border-radius: 10px;
+}
+li {
+   margin-bottom: 10px;
+   font-size: 17px;
+}
+
+/* ENLACES */
+a {
+   transition: all 0.3s ease;
+}
+
+/* TABLA */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 30px;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+th {
+   background-color: #071b35;
+   color: white;
+   font-size: 17px;
+   padding: 18px;
+   text-align: left;
+}
+td {
+   padding: 16px;
+   border: 1px solid #dce3ec;
+   background-color: white;
+}
+tr:nth-child(even) td {
+   background-color: #f4f7fa;
+}
+tr:hover td {
+   background-color: #e8f3ff;
+}
+
+/* MODIFICADORES SPAN */
+.azul {
+   color: #1683ff;
+   font-weight: bold;
+}
+.rojo {
+   color: #e53935;
+   font-weight: bold;
+}
+.verde {
+   color: #199447;
+   font-weight: bold;
+}
+.morado {
+   color: #8e44ad;
+   font-weight: bold;
+}
+.naranja {
+   color: #f57c00;
+   font-weight: bold;
+}
+
+/* VIDEO DE YOUTUBE */
+.video {
+   width: 100%;
+   max-width: 800px;
+   margin: 30px auto;
+}
+.video iframe {
+   width: 100%;
+   height: 450px;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* MAPAS DE GOOGLE */
+.mapa {
+   width: 100%;
+   max-width: 800px;
+   margin: 30px auto;
+}
+.mapa iframe {
+   width: 100%;
+   height: 450px;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* INFORMACIÓN DEL DESARROLLADOR */
+.datos {
+   text-align: center;
+}
+.datos p {
+   max-width: 650px;
+   margin: 12px auto;
+   padding: 12px;
+   background-color: #f4f7fa;
+   border-radius: 8px;
+   border-left: 4px solid #1683ff;
+}
+
+/* PIE DE PÁGINA */
+footer {
+   background-color: #06152b;
+   color: white;
+   text-align: center;
+   padding: 40px 20px;
+   margin-top: 60px;
+   border-top: 5px solid #1683ff;
+}
+footer p {
+   margin: 6px;
+}
+
+/* TABLETAS */
+@media (min-width: 701px) and (max-width: 1000px) {
+   header {
+       padding: 55px 20px;
+   }
+   header h1 {
+       font-size: 52px;
+   }
+   header p {
+       font-size: 20px;
+   }
+   nav a {
+       font-size: 16px;
+       margin: 0 6px;
+   }
+   main {
+       width: 92%;
+       margin-top: 40px;
+   }
+   .seccion,
+   .presentacion,
+   .informacion {
+       padding: 35px;
+   }
+   .presentacion h2 {
+       font-size: 36px;
+   }
+   .foto-principal {
+       width: 280px;
+       height: 280px;
+   }
+   .foto-seccion {
+       max-width: 550px;
+       height: 350px;
+   }
+   .video iframe,
+   .mapa iframe {
+       height: 380px;
+   }
+}
+
+/* TELÉFONOS */
+@media (max-width: 700px) {
+   header {
+       padding: 45px 15px;
+   }
+   header h1 {
+       font-size: 38px;
+       letter-spacing: 1px;
+   }
+   header p {
+       font-size: 17px;
+   }
+   nav {
+       padding: 12px;
+   }
+   nav a {
+       display: block;
+       margin: 5px auto;
+       padding: 8px;
+       width: 90%;
+   }
+   main {
+       width: 94%;
+       margin: 25px auto;
+   }
+   .seccion,
+   .presentacion,
+   .informacion {
+       padding: 25px 20px;
+       margin-bottom: 25px;
+       border-radius: 12px;
+   }
+   .seccion h2,
+   .informacion h2 {
+       font-size: 27px;
+       border-left-width: 5px;
+       padding-left: 10px;
+   }
+   .presentacion h2 {
+       font-size: 30px;
+   }
+   .foto-principal {
+       width: 220px;
+       height: 220px;
+       border-width: 6px;
+   }
+   .foto-seccion {
+       width: 100%;
+       height: 280px;
+       border-width: 3px;
+   }
+   .presentacion p,
+   .seccion p {
+       font-size: 16px;
+   }
+   ul {
+       padding: 20px 30px;
+   }
+   li {
+       font-size: 16px;
+   }
+   table {
+       font-size: 13px;
+   }
+   th,
+   td {
+       padding: 9px 7px;
+   }
+   .video iframe {
+       height: 230px;
+   }
+   .mapa iframe {
+       height: 300px;
+   }
+   footer {
+       padding: 30px 15px;
+   }
+}
+
+/* TELÉFONOS PEQUEÑOS */
+@media (max-width: 400px) {
+   header h1 {
+       font-size: 32px;
+   }
+   header p {
+       font-size: 15px;
+   }
+   .presentacion h2 {
+       font-size: 26px;
+   }
+   .foto-principal {
+       width: 180px;
+       height: 180px;
+   }
+   .foto-seccion {
+       height: 230px;
+   }
+   .seccion h2,
+   .informacion h2 {
+       font-size: 24px;
+   }
+   table {
+       font-size: 11px;
+   }
+   th,
+   td {
+       padding: 7px 5px;
+   }
+   .video iframe {
+       height: 200px;
+   }
+   .mapa iframe {
+       height: 250px;
+   }
+}
